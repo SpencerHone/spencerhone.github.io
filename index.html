@@ -108,6 +108,7 @@ This program creates a mozilla splash page whilst embedding images and video
       <h1>Mozilla</h1>
       <!-- insert <img> element, link to the small
           version of the Firefox logo -->
+          <img src="logo-small.png" alt="Firefox Logo">
 
     </header>
 
@@ -125,16 +126,30 @@ This program creates a mozilla splash page whilst embedding images and video
       <div class="further-info">
         <!-- insert images with srcsets and sizes -->
         <a href="https://www.mozilla.org/en-US/firefox/new/">
-          <img>
+          <img
+            srcset="logo.png, logo-small.png"
+            sizes="(max-width: 120px)"
+            src="logo.png"
+            alt="Link to Firefox Download">
         </a>
         <a href="https://www.mozilla.org/">
-          <img>
+          <img
+            srcset="head.png, head-small.png"
+            sizes="(max-width: 120px)"
+            src="head.png"
+            alt="Link to Main Mozilla Page">
         </a>
         <a href="https://addons.mozilla.org/">
-          <img>
+          <img
+            srcset="addon.jpg, addon-small.jpg"
+            sizes="(max-width: 120px)"
+            src="addon.jpg"
+            alt="Link to Firefox Download">
         </a>
         <a href="https://developer.mozilla.org/en-US/">
-          <img>
+          <img
+            src="mdn.svg"
+            alt="Link to Developer Resources">
         </a>
         <div class="clearfix"></div>
       </div>
