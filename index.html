@@ -108,7 +108,9 @@ This program creates a mozilla splash page whilst embedding images and video
       <h1>Mozilla</h1>
       <!-- insert <img> element, link to the small
           version of the Firefox logo -->
-          <img src="logo-small.png" alt="Firefox Logo">
+          <img
+            src="logo-small.png"
+            alt="Firefox Logo">
 
     </header>
 
@@ -126,25 +128,34 @@ This program creates a mozilla splash page whilst embedding images and video
       <div class="further-info">
         <!-- insert images with srcsets and sizes -->
         <a href="https://www.mozilla.org/en-US/firefox/new/">
-          <img
-            srcset="logo.png, logo-small.png"
-            sizes="(max-width: 120px)"
-            src="logo.png"
-            alt="Link to Firefox Download">
+          <picture>
+            <source
+              media="(max-width: 600px)"
+              srcset="logo-small.png">
+            <img
+              src="logo.png"
+              alt="Link to Firefox Download">
+          </picture>
         </a>
         <a href="https://www.mozilla.org/">
+          <picture>
+            <source
+              media="(max-width: 600px)"
+              srcset="head-small.png">
           <img
-            srcset="head.png, head-small.png"
-            sizes="(max-width: 120px)"
-            src="head.png"
-            alt="Link to Main Mozilla Page">
+              src="head.png"
+              alt="Link to Main Mozilla Page">
+          </picture>
         </a>
         <a href="https://addons.mozilla.org/">
+          <picture>
+            <source
+              media="(max-width: 600px)"
+              srcset="addon-small.jpg">
           <img
-            srcset="addon.jpg, addon-small.jpg"
-            sizes="(max-width: 120px)"
-            src="addon.jpg"
-            alt="Link to Firefox Download">
+              src="addon.jpg"
+              alt="Link to Firefox Download">
+          </picture>
         </a>
         <a href="https://developer.mozilla.org/en-US/">
           <img
@@ -155,7 +166,10 @@ This program creates a mozilla splash page whilst embedding images and video
       </div>
 
       <div class="red-panda">
-        <!-- insert picture element -->
+        <picture>
+          <source media="(max-width: 600px)" srcset="red-panda-portrait.jpg">
+          <img src="red-panda-landscape.jpg" alt="A Red Panda">
+        </picture>
       </div>
 
     </main>
