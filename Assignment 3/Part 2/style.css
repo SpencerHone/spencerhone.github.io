@@ -19,4 +19,8 @@ div {
         rgba(0, 0, 0, 0.2) 0%,
         rgba(0, 0, 0, 0.2) 30%,
         rgba(0, 0, 0, 0) 100%);
+    box-shadow:
+        2px 2px 4px black,
+        inset 2px 2px 4px rgba(255, 255, 255, 0.5),
+        inset -2px -2px 4px rgba(0, 0, 0, 0.5);
 }
