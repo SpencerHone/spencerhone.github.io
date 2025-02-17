@@ -42,4 +42,20 @@
     border-bottom: 5px solid #a66;
   }
   
-  /* WRITE YOUR CODE BELOW HERE */
+  @font-face {
+    font-family: Cardo;
+    src: url('https://github.com/SpencerHone/spencerhone.github.io/tree/main/Assignment%203/Part%203/Cardo.ttf');
+  }
+
+  @font-face {
+    font-family: Inter;
+    src: url('https://github.com/SpencerHone/spencerhone.github.io/tree/main/Assignment%203/Part%203/Inter.ttf');
+  }
+  
+  html {
+    font-family: Cardo, serif;
+  }
+
+  h1, h2 {
+    font-family: Inter, sans-serif;
+  }
