@@ -74,6 +74,51 @@
     letter-spacing: 1.25px;
   }
 
-  section  h2, p {
-    text-indent: 15px;
+  section  h2 + p {
+    text-indent: 20px;
+  }
+
+  a:link {
+    color: hotpink;
+  }
+
+  a:visited {
+    color: darkred;
+  }
+
+  a:focus {
+    color: coral;
+  }
+
+  a:hover {
+    color: red;
+  }
+
+  a:focus, a:hover {
+    text-decoration: none;
+  }
+
+  a {
+    outline: none;
+  }
+
+  a[href*="http"] {
+    padding-right: 19px;
+    background: url(link.png) no-repeat 100% 0;
+    background-size: 12px 12px;
+  }
+
+  ul, ol {
+    margin: 1.5rem 0;
+    list-style-type: circle;
+  }
+
+  nav ul {
+    padding-left: 0;
+    margin-top: 1rem;
+  }
+
+  nav li {
+    list-style-type: none;
+    margin-bottom: 0.5rem;
   }
