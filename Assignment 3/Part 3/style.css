@@ -57,8 +57,8 @@
     src: url('Fonts/Inter/Inter.eot') format(embedded-opentype);
     src: url('Fonts/Inter/Inter.woff') format(woff),
          url('Fonts/Inter/Inter.woff2') format(woff2),
-         url('Fonts/Inter/Inter.otf') format(truetype),
-         url('Fonts/Inter/Inter.ttf') format(opentype);
+         url('Fonts/Inter/Inter.otf') format(opentype),
+         url('Fonts/Inter/Inter.ttf') format(truetype);
   }
   
   html {
