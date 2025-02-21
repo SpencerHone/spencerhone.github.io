@@ -44,12 +44,21 @@
   
   @font-face {
     font-family: Cardo;
-    src: url('https://spencerhone.github.io/Assignment%203/Part%203/Cardo.ttf');
+    src: url('Fonts/Cardo/Cardo.eot') format(embedded-opentype);
+    src: url('Fonts/Cardo/Cardo.woff') format(woff),
+         url('Fonts/Cardo/Cardo.woff2') format(woff2),
+         url('Fonts/Cardo/Cardo.otf') format(opentype),
+         url('Fonts/Cardo/Cardo.ttf') format(truetype);
+
   }
 
   @font-face {
     font-family: Inter;
-    src: url('https://spencerhone.github.io/Assignment%203/Part%203/Inter.ttf');
+    src: url('Fonts/Inter/Inter.eot') format(embedded-opentype);
+    src: url('Fonts/Inter/Inter.woff') format(woff),
+         url('Fonts/Inter/Inter.woff2') format(woff2),
+         url('Fonts/Inter/Inter.otf') format(truetype),
+         url('Fonts/Inter/Inter.ttf') format(opentype);
   }
   
   html {
@@ -121,4 +130,24 @@
   nav li {
     list-style-type: none;
     margin-bottom: 0.5rem;
+  }
+
+  nav li a {
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    line-height: 3;
+    text-align: center;
+    font-size: 2rem;
+    border: 1px solid black;
+    }
+
+  nav li a:focus, nav li a:hover {
+    color: white;
+    background: #a66;
+  }
+
+  nav li a:active {
+    color: white;
+    background: black;
   }
