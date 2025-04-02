@@ -1,5 +1,8 @@
 // set up canvas
 
+const para = document.querySelector('p');
+let count = 0;
+
 const canvas = document.querySelector("canvas");
 const ctx = canvas.getContext("2d");
 
@@ -9,8 +12,9 @@ const height = (canvas.height = window.innerHeight);
 // function to generate random number
 
 function random(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
+  const num = Math.floor(Math.random() * (max - min + 1)) + min;
+  return num;
+};
 
 // function to generate random RGB color value
 
@@ -166,6 +170,8 @@ while (balls.length < 25) {
   );
 
   balls.push(ball);
+  count++;
+  para.textContent = 'Ball count: ' + count;
 }
 
 const evilBall = new EvilCircle(random(0, width), random(0, height));
